@@ -41,6 +41,8 @@ Record verifiable observations, reasons for decisions, important alternatives, a
 
 Use actual values, object names, artifact versions, and screenshot locations. Unperformed is NOT RUN; N/A needs a reason. Format validation is not asset validation, manifold topology is not shape quality, and UV existence is not clean UVs.
 
+For asset delivery, record the actual `.blend` filename/version, size, successful save, fresh-reopen result and accessible link/attachment. Identify scripts as supplementary or explicitly requested script-only outputs. Record execution/access blockers without claiming completion.
+
 For asset delivery, explicitly record selection at object and Collection levels, overlays/Extras across saved 3D Views, and the post-reopen practical check.
 
 ## Review notes / limitations and follow-up
