@@ -6,7 +6,7 @@ English is authoritative for maintained instructions, change records and worklog
 
 1. Identify the failing behavior or missing requirement. For a consequential change to budgets, confirmation, topology or rig semantics, open an issue with an example before proposing a universal rule.
 2. Fork the repository and create a focused branch. Record the base version and commit, if available.
-3. Modify the narrowest appropriate rule/reference. Preserve existing R01–R10 identifiers. Propose new IDs as `PROPOSED` until assigned by the maintainer; do not renumber old rules.
+3. Modify the narrowest appropriate rule/reference. Preserve existing R01–R11 identifiers. Propose new IDs as `PROPOSED` until assigned by the maintainer; do not renumber old rules.
 4. Copy [changes/TEMPLATE.md](changes/TEMPLATE.md) to `changes/YYYY-MM-DD-short-topic-author.md`. Use a unique filename. Complete the before/after behavior, scope, evidence and compatibility fields; use N/A with a reason where appropriate.
 5. Synchronize affected English and Traditional Chinese instructions. If translation is unavailable, explicitly mark it pending in the PR; the maintainer must resolve it before release.
 6. Run `python scripts/validate.py` and perform any relevant behavioral/asset tests. Open a PR with the [PR template](.github/pull_request_template.md).

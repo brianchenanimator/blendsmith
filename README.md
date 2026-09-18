@@ -4,7 +4,7 @@
 
 [繁體中文](README.zh-TW.md) · [Skill instructions](skill/blendsmith/SKILL.md) · [Contribute](CONTRIBUTING.md) · [Changes](CHANGELOG.md)
 
-**Version 2026.09.010 · Public preview · GPL-3.0-only · Blender 4.4 workflow baseline**
+**Version 2026.09.011 · Public preview · GPL-3.0-only · Blender 4.4 workflow baseline**
 
 blendsmith gives an AI assistant a practical workflow for clarifying references, producing editable Blender assets, and checking the handoff. It grew from repeated artist feedback on product models, rigs, baking and architecture.
 
@@ -19,7 +19,7 @@ It is an instruction-based skill, not a Blender add-on, a one-click mesh generat
 | UV and textures | Agree atlas count, square resolution and UDIM needs; verify UV quality and four PBR channels |
 | Shaders and baking | Readable Coordinate → Mapping → image chains; finalize normals before bake; verify proxy consistency |
 | Rigging | Confirm controls, hierarchy and limits; use animator-facing Armature pose bones; test real interaction |
-| Delivery | Version files, preserve sources, organize maps, reopen, keep selection and Extras enabled |
+| Delivery | Execute and save the actual `.blend`, reopen it, provide an accessible file link; preserve sources, maps, selection and Extras |
 | Feedback | English logs, evidence-linked rule updates, clear limits and pending acceptance |
 
 English instructions are authoritative; a Traditional Chinese reading copy is included. The assistant should communicate in the user's language. These are project conventions; explicit user requirements govern agreed departures. There is no universal polygon budget or smoothing angle.
@@ -47,7 +47,7 @@ Irregular silhouettes, close-up reference fidelity, intricate hinges and viewpoi
 
 Fork → focused branch → change + evidence → Pull Request → maintainer review.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Preserve R01–R10 rule IDs. Include a uniquely named [change record](changes/TEMPLATE.md) with the base version, before/after behavior, scope and actual test results. Offline ZIP submissions use the same record. The maintainer assigns release versions; pending proposals are not established production rules.
+Read [CONTRIBUTING.md](CONTRIBUTING.md). Preserve R01–R11 rule IDs. Include a uniquely named [change record](changes/TEMPLATE.md) with the base version, before/after behavior, scope and actual test results. Offline ZIP submissions use the same record. The maintainer assigns release versions; pending proposals are not established production rules.
 
 Run the dependency-free repository checks with Python 3.10 or newer:
 
@@ -69,7 +69,7 @@ Production `worklog/`, backups and model outputs stay local by default. New publ
 
 ## Version naming
 
-Current versions use `YYYY.MM.NNN`: year, two-digit month and three-digit release sequence within that month. Metadata uses `2026.09.010`; GitHub tags use `v2026.09.010`. The initial CalVer label is maintainer-selected and does not claim nine earlier public releases. See [publishing guidance](docs/publishing.md).
+Current versions use `YYYY.MM.NNN`: year, two-digit month and three-digit release sequence within that month. Metadata uses `2026.09.011`; GitHub tags use `v2026.09.011`. The initial CalVer label is maintainer-selected and does not claim nine earlier public releases. See [publishing guidance](docs/publishing.md).
 
 ## License
 

@@ -57,6 +57,7 @@ Ask whether another necessary structure is missing. Invisible does not automatic
 - Handoff state: object/Collection selection enabled; overlays and Extras enabled in all saved 3D Views:
 - Lighting direction, atmosphere, neutral inspection setup:
 - `.blend`, editable maps, additional exports and receiving-app tests:
+- R11 execution readiness: Blender/tool availability, writable output folder, expected versioned filename and user-accessible delivery method:
 - Agreed user-review milestones and work allowed to continue without another review:
 
 ## Rig specification and user confirmation — R10, when controls are requested

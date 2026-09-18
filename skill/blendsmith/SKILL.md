@@ -3,7 +3,7 @@ name: blendsmith
 license: GPL-3.0-only
 description: Create, edit, or review editable Blender assets under the user's production requirements for reference confirmation, triangle/quad topology, UVs and UDIMs, PBR textures, readable shaders, rig usability, and delivery checks. Also use for revising these requirements from asset trials and user feedback and maintaining English worklogs.
 metadata:
-  version: "2026.09.010"
+  version: "2026.09.011"
   status: "Public-preview package; production rules inherited from 0.1.10. Historical trial evidence has limited scope."
 ---
 
@@ -115,6 +115,16 @@ Before building or materially revising a rig, ask what the user needs to animate
 
 Validate the actual Pose Mode workflow: ordinary transform tools and keyframes, permitted and blocked channels, parent motion, attached details, transition boundaries, reverse motion, save/reopen, and playback/scrubbing. Transform-channel locks are distinct from object/bone selection locks: retain R06 selection and Extras while enforcing agreed motion limits. Helper bones, constraints and drivers may support the rig, but keep the animator-facing controls clear. A passing mathematical driver test alone does not establish a usable animator workflow.
 
+## R11 — Deliver the actual Blender file
+
+When the agreed deliverable is a Blender asset, execute the authorized build yourself and save a versioned `.blend` in the agreed delivery folder. Generation scripts (`.py`, `.ps1`), commands, previews and instructions are supplementary sources; they do not replace the requested model. Do not leave the user to run PowerShell or Python to obtain the first usable `.blend`, unless the user explicitly requested script-only delivery.
+
+Early in production, verify that the available tools can operate Blender and write to the output location. If execution is unavailable or fails, state the concrete blocker and that the model has not been generated; label any supplied script as unexecuted/partial work. Do not describe a script-only package as a completed asset or silently install software beyond the authorized scope.
+
+Before claiming delivery complete, wait for generation/save to finish, verify the exact file exists and has nonzero size, and reopen that saved file in a fresh Blender process. Inspect the expected scene and required dependencies using the [delivery checklist](references/production-checklist.md#7-save-reopen-and-deliver). An old file left by a failed build, a successful script exit, or file size alone does not prove the current deliverable is valid. Record the actual filename/version, size, save and reopen results; unresolved required checks remain incomplete.
+
+Provide a clickable link to the actual `.blend` in the user's accessible output folder, or attach the file through the host's supported download mechanism. Verify the exposed artifact matches the checked file. A path that exists only in an inaccessible assistant environment is not a completed handoff. Report any access/attachment limitation explicitly; do not claim a file appeared in a Files panel without evidence. Apply this rule to each agreed asset-delivery milestone. Analysis-only, review-only and explicitly script-only tasks do not require a new model file.
+
 ## Production and verification
 
 1. **Confirm the brief:** purpose, camera distance, dimensions, internals, materials/maps, UV/UDIM plan, rig, budgets, and output formats. Do not invent universal industry numbers. Agree on any user review milestones rather than adding repeated approvals later.
@@ -122,7 +132,7 @@ Validate the actual Pose Mode workflow: ordinary transform tools and keyframes, 
 3. **Build editable structure:** choose functional parts, origins, names, Collections, materials, and modifiers. Use instances for repetition where useful and allocate small surface detail to textures or geometry according to the shot. More polygons are not a substitute for sound construction.
 4. **Finish topology, UVs, shading, and controls:** follow R01–R03 and R10 for rigs. Before applying transforms/modifiers, consider dimensions, UVs, normals, parenting, and rigs. Moving parts, legends, and attached details must move together.
 5. **Check actual results:** apply the relevant [production checklist](references/production-checklist.md). Record PASS, FAIL, NOT RUN, or N/A with evidence. A beauty render, manifold count, or face count cannot substitute for production validation. Include R06 handoff checks.
-6. **Deliver and log:** provide versioned `.blend` files, editable texture maps and necessary dependencies, brief operating notes, actual test results, and limitations. Write the worklog and provide inspection entry points.
+6. **Deliver and log:** apply R11, then provide versioned `.blend` files, editable texture maps and necessary dependencies, brief operating notes, actual test results, and limitations. Write the worklog and provide inspection entry points.
 
 ## Improve through asset trials
 

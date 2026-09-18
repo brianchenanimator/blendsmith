@@ -2,6 +2,14 @@
 
 Maintainers update release versions. Unreleased proposals live in uniquely named `changes/` records until reviewed.
 
+## 2026.09.011 — 2026-09-18 — Actual Blender-file delivery
+
+- Added R11: execute the authorized build, save the actual versioned `.blend`, reopen it and provide an accessible artifact. Generation scripts alone do not fulfill a model request.
+- Explicitly report unavailable execution or artifact access; preserve analysis/review-only and requested script-only exceptions.
+- Synchronized English/Traditional Chinese instructions, delivery checklist, recording templates and rule-ID validation. No model files changed; behavioral trial pending.
+
+See [change record](changes/2026-09-18-actual-blend-delivery.md).
+
 ## 2026.09.010 — 2026-09-17 — Calendar versioning
 
 - Adopted `YYYY.MM.NNN` version labels at the maintainer's request; initial label is 2026.09.010 and the matching tag is v2026.09.010.
