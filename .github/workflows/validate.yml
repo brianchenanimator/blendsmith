@@ -1,0 +1,13 @@
+name: Validate blendsmith documents
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  documents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate source package
+        run: python3 scripts/validate.py

@@ -58,7 +58,7 @@ def validate(root):
         for name in ['README.md', 'README.zh-TW.md', 'CHANGELOG.md', 'skill/blendsmith/SKILL.zh-TW.md']:
             if v not in (root / name).read_text(encoding='utf-8'):
                 errors.append(f'Version {v} absent from {name}')
-    for n in range(1, 11):
+    for n in range(1, 12):
         rule = f'R{n:02}'
         if rule not in en or rule not in zh:
             errors.append(f'Rule missing from English or Chinese skill: {rule}')
