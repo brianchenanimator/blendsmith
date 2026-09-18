@@ -107,6 +107,11 @@ Additional channels depend on the asset:
 
 ## 7. Save, reopen, and deliver
 
+- R11: confirm Blender execution and output-folder access early; execute the authorized build and wait for save completion. A script-only package is incomplete unless explicitly requested.
+- Verify the exact delivered `.blend` exists, has nonzero size and contains this build's expected asset/version. Record filename, size and save result; reject stale output after a failed build.
+- Provide a working local file link or supported downloadable attachment to the checked artifact. Confirm the user can access the output location; report unresolved attachment/access limits. Do not claim a Files-panel entry solely because a script names an output path.
+- If Blender cannot run, report the blocker and mark generation/reopen NOT RUN or FAIL as appropriate. Label any script-only output as partial, not a finished model.
+
 - Deliver the `.blend` and editable maps. Verify relative paths, packing strategy, dependencies, and versions; a beauty image is not the asset.
 - Reopen the actual deliverable in a fresh Blender process and inspect images, fonts, groups, drivers, modifiers, scenes, materials, selection, and Extras. Mark this NOT RUN if not performed.
 - If a game or other DCC export is requested, import it into the receiving application. Blender-only inspection does not establish downstream compatibility.
