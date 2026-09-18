@@ -4,7 +4,7 @@
 
 [English](README.md) · [Skill 繁中閱讀副本](skill/blendsmith/SKILL.zh-TW.md) · [貢獻規範](CONTRIBUTING.md) · [版本紀錄](CHANGELOG.md)
 
-**版本 2026.09.010 · 公開測試版 · GPL-3.0-only · 以 Blender 4.4 流程為基礎**
+**版本 2026.09.011 · 公開測試版 · GPL-3.0-only · 以 Blender 4.4 流程為基礎**
 
 blendsmith 是由反覆製作模型、收集美術回饋形成的 AI 工作指引，涵蓋需求確認、模型、UV、材質、烘焙、Rig 與交付。它不是 Blender 外掛或一鍵建模工具，也不代表產業品質認證。使用的助手仍須能讀取參考並操作 Blender；安裝 skill 不會自動安裝 Blender 或取得檔案權限。
 
@@ -16,7 +16,7 @@ blendsmith 是由反覆製作模型、收集美術回饋形成的 AI 工作指�
 - Shader Editor 清楚分區，所有圖片有對應 Coordinate／Mapping 鏈。
 - 烘焙前確定平滑與法線；驗證烘焙代理模型，保留程序材質來源與烘焙版。
 - 控制器採 Armature／Pose Mode，先核對動作、階層、軸向與限制，再測試實際操作。
-- 保留來源、分類貼圖、另存版本、重開驗證，交付時保留 Selection 與 Extras。
+- 助手自行生成並保存實際 `.blend`，重開驗證並提供可存取檔案；保留來源、分類貼圖及 Selection／Extras，不能只交腳本讓使用者生成。
 - 英文 worklog 與有證據的回饋紀錄；未測試、未接受、未完成要清楚標示。
 
 英文文件為正本，繁體中文版供閱讀；助手應配合使用者的語言溝通。以上是本 skill 的專案約定，使用者明確要求優先，個別差異要記入製作簡報。不存在適用所有模型的面數或平滑角度。
@@ -42,13 +42,13 @@ blendsmith 是由反覆製作模型、收集美術回饋形成的 AI 工作指�
 
 Fork → 建立修改分支 → 修改並附證據 → 開 Pull Request → 維護者審查。
 
-依[貢獻規範](CONTRIBUTING.md)保留 R01–R10 編號，每次提交附上[英文修改紀錄](changes/TEMPLATE.md)，寫明基準版本、修改前後、適用範圍與實測結果。離線 ZIP 也採同一格式；版本號由維護者統一調整。
+依[貢獻規範](CONTRIBUTING.md)保留 R01–R11 編號，每次提交附上[英文修改紀錄](changes/TEMPLATE.md)，寫明基準版本、修改前後、適用範圍與實測結果。離線 ZIP 也採同一格式；版本號由維護者統一調整。
 
 使用 Python 3.10 以上執行 `python scripts/validate.py`，檢查套件與文件一致性；這不會測試 Blender 幾何或美術品質。`worklog/`、備份與模型輸出預設留在本機。
 
 ## 版本命名
 
-採用 `YYYY.MM.NNN`：年份、兩位月份、當月三位發布序號。文件版本為 `2026.09.010`，GitHub Tag 使用 `v2026.09.010`。首次日期版本由維護者指定起始序號，不代表已有九次公開發布。詳見[發布說明](docs/publishing.md)。
+採用 `YYYY.MM.NNN`：年份、兩位月份、當月三位發布序號。文件版本為 `2026.09.011`，GitHub Tag 使用 `v2026.09.011`。首次日期版本由維護者指定起始序號，不代表已有九次公開發布。詳見[發布說明](docs/publishing.md)。
 
 ## 授權
 
