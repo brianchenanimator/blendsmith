@@ -16,6 +16,10 @@ It is an instruction-based skill, not a Blender add-on, a one-click mesh generat
 
 ## What it looks like
 
+A video walkthrough of the skill:
+
+[![I Built a Free Blender Skill for ChatGPT ! Blend Smith](docs/images/video-thumbnail.jpg)](https://youtu.be/SRVl_M4WBmY)
+
 These are frames from the project's own asset trials, not a benchmark suite. Private scene files are not included.
 
 A reference-led high mesh and a budgeted low derivative that keeps the silhouette (R03):
@@ -70,6 +74,8 @@ Irregular silhouettes, close-up reference fidelity, intricate hinges and viewpoi
 ## Improve blendsmith
 
 Fork → focused branch → change + evidence → Pull Request → maintainer review.
+
+**New to this?** Use the **Fork** button at the top right of this page to get your own copy, commit the change there, then open a pull request from the **Contribute** button on your fork. Prefer not to use Git? [Open an issue](https://github.com/brianchenanimator/blendsmith/issues/new/choose), or send a ZIP as described under [offline submissions](CONTRIBUTING.md#offline-submissions). Questions, and "here is what I built with it" posts, belong in [Discussions](https://github.com/brianchenanimator/blendsmith/discussions).
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md). Preserve R01–R11 rule IDs. Include a uniquely named [change record](changes/TEMPLATE.md) with the base version, before/after behavior, scope and actual test results. Offline ZIP submissions use the same record. The maintainer assigns release versions; pending proposals are not established production rules.
 
