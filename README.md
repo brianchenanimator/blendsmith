@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/logo.png" alt="blendsmith logo" width="180">
+</p>
+
 # blendsmith
 
 **Reference-led Blender assets, built for the person who edits them next.**
@@ -9,6 +13,26 @@
 blendsmith gives an AI assistant a practical workflow for clarifying references, producing editable Blender assets, and checking the handoff. It grew from repeated artist feedback on product models, rigs, baking and architecture.
 
 It is an instruction-based skill, not a Blender add-on, a one-click mesh generator, or an industry certification. It requires an assistant with access to your reference files and a working way to operate Blender. Installing the documents does not grant filesystem access or install Blender.
+
+## What it looks like
+
+These are frames from the project's own asset trials, not a benchmark suite. Private scene files are not included.
+
+A reference-led high mesh and a budgeted low derivative that keeps the silhouette (R03):
+
+![Bottle shown as render view, high mesh wireframe and low mesh wireframe](docs/images/bottle-high-low.png)
+
+![Foldable device shown as high mesh and low mesh wireframes](docs/images/foldable-high-low.png)
+
+Non-overlapping UVs on an agreed atlas, beside a Shader Editor graph arranged left to right with named frames (R01–R02):
+
+![UV atlas layout next to a framed, left-to-right shader node graph](docs/images/uv-and-shader.png)
+
+Animator-facing Armature controls, operated and keyframed in Pose Mode rather than through Object Mode empties (R10):
+
+![Cap control rotated in Pose Mode](docs/images/rig-cap.gif)
+
+![Fold control rotated in Pose Mode with transform limits visible](docs/images/rig-fold.gif)
 
 ## What it covers
 

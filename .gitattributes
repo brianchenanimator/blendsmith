@@ -4,3 +4,12 @@
 *.yaml text eol=lf
 *.yml text eol=lf
 LICENSE text eol=lf
+
+# Binary assets: never apply text/EOL normalization.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.webm binary
+*.ai binary
