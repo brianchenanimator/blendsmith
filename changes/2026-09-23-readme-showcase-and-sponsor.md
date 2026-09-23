@@ -41,4 +41,4 @@ English and Traditional Chinese READMEs both received the logo and an equivalent
 
 ## Limitations and feedback
 
-`docs/images/uv-and-shader.png` has a typo baked into the artwork: "UV and Chader Editor" should read "Shader". The layered source is held outside the repository and the image should be replaced. The GIFs are silent, unnarrated and show a single asset each, so they illustrate the workflow without establishing reproducible evidence. No reviewer or user feedback yet; this record is pending, not accepted.
+An earlier draft of `docs/images/uv-and-shader.png` read "UV and Chader Editor"; the author corrected the artwork to "Shader" and the image was replaced before merge. The GIFs are silent, unnarrated and show a single asset each, so they illustrate the workflow without establishing reproducible evidence. No reviewer or user feedback yet; this record is pending, not accepted.
