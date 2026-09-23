@@ -14,6 +14,10 @@ blendsmith 是由反覆製作模型、收集美術回饋形成的 AI 工作指�
 
 ## 實際成果
 
+影片解說：
+
+[![I Built a Free Blender Skill for ChatGPT ! Blend Smith](docs/images/video-thumbnail.jpg)](https://youtu.be/SRVl_M4WBmY)
+
 以下畫面來自本專案的製作試驗，不是標準化的評測；場景原始檔不隨附。
 
 從參考出發的高模，以及保留輪廓的低模衍生版本（R03）：
@@ -65,6 +69,8 @@ blendsmith 是由反覆製作模型、收集美術回饋形成的 AI 工作指�
 ## 如何共同改善
 
 Fork → 建立修改分支 → 修改並附證據 → 開 Pull Request → 維護者審查。
+
+**第一次參與？** 點頁面右上角的 **Fork** 取得你自己的副本，在那邊修改並 commit，再從你 fork 頁面的 **Contribute** 按鈕開 Pull Request。不想用 Git 的話，可以[開一個 issue](https://github.com/brianchenanimator/blendsmith/issues/new/choose)，或依[離線提交方式](CONTRIBUTING.md#offline-submissions)寄送 ZIP。一般問題與「我用它做了什麼」的分享請發到 [Discussions](https://github.com/brianchenanimator/blendsmith/discussions)。
 
 依[貢獻規範](CONTRIBUTING.md)保留 R01–R11 編號，每次提交附上[英文修改紀錄](changes/TEMPLATE.md)，寫明基準版本、修改前後、適用範圍與實測結果。離線 ZIP 也採同一格式；版本號由維護者統一調整。
 
