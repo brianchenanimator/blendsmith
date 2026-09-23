@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/logo.png" alt="blendsmith logo" width="180">
+</p>
+
 # blendsmith
 
 **從參考出發，製作讓下一位使用者容易接手編輯的 Blender 資產。**
@@ -7,6 +11,26 @@
 **版本 2026.09.011 · 公開測試版 · GPL-3.0-only · 以 Blender 4.4 流程為基礎**
 
 blendsmith 是由反覆製作模型、收集美術回饋形成的 AI 工作指引，涵蓋需求確認、模型、UV、材質、烘焙、Rig 與交付。它不是 Blender 外掛或一鍵建模工具，也不代表產業品質認證。使用的助手仍須能讀取參考並操作 Blender；安裝 skill 不會自動安裝 Blender 或取得檔案權限。
+
+## 實際成果
+
+以下畫面來自本專案的製作試驗，不是標準化的評測；場景原始檔不隨附。
+
+從參考出發的高模，以及保留輪廓的低模衍生版本（R03）：
+
+![瓶身的算圖檢視、高模線框與低模線框](docs/images/bottle-high-low.png)
+
+![摺疊裝置的高模與低模線框](docs/images/foldable-high-low.png)
+
+在約定圖集上不重疊的 UV，以及由左到右、分區命名的 Shader Editor 節點圖（R01–R02）：
+
+![UV 圖集配置與分區命名的節點圖](docs/images/uv-and-shader.png)
+
+給動畫師操作的 Armature 控制項，在 Pose Mode 直接操作與打 keyframe，而不是 Object Mode 的空物件（R10）：
+
+![在 Pose Mode 旋轉瓶蓋控制項](docs/images/rig-cap.gif)
+
+![在 Pose Mode 旋轉摺疊控制項，可見 transform 限制](docs/images/rig-fold.gif)
 
 ## 已有規範
 
